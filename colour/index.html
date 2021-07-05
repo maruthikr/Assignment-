@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+    function change(list)
+     {
+        var val=list.options[list.selectedIndex].value;
+        document.body.style.background=val;
+        
+    }
+    </script>
+<style>
+#sel{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding: 10px 100px;
+    outline: none;
+    text-align: center;
+    font-family: serif;
+
+}
+#txt{
+    padding: 110px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+
+
+</head>
+<body style="background-color: cornflowerblue;"  >
+    <div  id="txt"  > <h1>Hello, World !</h1>
+        <h4>what colour?</h4>
+         </div>
+    <select  id="sel" name="lsit" onchange="change(this)">
+        <option value="gray" >Choose colour</option>
+
+    <option value="red" >Red</option>
+    <option value="blue">Blue</option>
+    <option value="green" >Green</option>
+    <option value="orange">Orange</option>
+    <option value="gray">Gray</option>
+    <option  value="yellow">Yellow</option>
+</select>
+
+</body>
+</html>

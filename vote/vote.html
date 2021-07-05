@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./votestyle.css">
+</head>
+<style>
+    
+</style>
+<body style="background-color: rgb(223, 217, 217);">
+    <h1 id="i" >Vote Your Language!</h1>
+    <script type="text/javascript">
+
+        var clicks = 0;
+        function h() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+        var clicks = 0;
+        function hi() {
+            clicks += 1;
+            document.getElementById("pyth").innerHTML = clicks;
+        };
+         var clicks = 0;
+        function he() {
+            clicks += 1;
+            document.getElementById("go").innerHTML = clicks;
+        };
+        var clicks = 0;
+        function hel() {
+            clicks += 1;
+            document.getElementById("java").innerHTML = clicks;
+        };
+       
+        </script>
+        <div id="div">
+         <div  style="display: flex; background-color: orange; width: 200px; "  > 
+            <button type="button" onclick="h()">click here </button> &emsp; &emsp; <p>PHP    &emsp;   <a id="clicks">0</a></p>
+            
+         </div> <br>
+         
+         <div  style="display: flex; background-color:orange; width: 200px; "  > 
+            <button type="button" onclick="hi()">click here </button> &emsp; &emsp; <p>PYTHON&emsp;<a id="pyth">0</a></p>
+            
+         </div> <br>
+         <div  style="display: flex; background-color: orange; width: 200px; "  > 
+            <button type="button" onclick="he()">click here </button> &emsp; &emsp; <p> GO &emsp; <a id="go">0</a></p>
+            
+         </div><br>
+         <div  style="display: flex; background-color: orange; width: 200px; "  > 
+            <button type="button" onclick="hel()">click here </button> &emsp; &emsp; <p>JAVA   &emsp; <a id="java">0</a></p>
+            
+         </div>
+        </div>
+</body>
+</html>
